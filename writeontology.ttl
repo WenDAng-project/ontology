@@ -1,0 +1,848 @@
+@prefix : <http://w3id.org/write/ontology#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdt: <http://www.wikidata.org/prop/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/write/ontology#> .
+
+<http://w3id.org/write/ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/write/academic-artistic-formation
+<http://w3id.org/write/academic-artistic-formation> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain wd:Q215627 ;
+                                                    rdfs:comment "The academic specialisation of a person. Do not specify the type of degree (e.g. Master), but just the subject (e.g. visual arts)" ;
+                                                    rdfs:label "academic artistic formation" .
+
+
+###  http://w3id.org/write/artistic-collective-type
+<http://w3id.org/write/artistic-collective-type> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain wd:Q1400264 ;
+                                                 rdfs:comment "The type of an artistic collective" ;
+                                                 rdfs:label "artistic collective type" .
+
+
+###  http://w3id.org/write/artwork-type
+<http://w3id.org/write/artwork-type> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://w3id.org/write/TraditionalArtwork> ,
+                                                 wd:Q4502142 ;
+                                     rdfs:comment "The type of an artwork" ;
+                                     rdfs:label "artwork type" .
+
+
+###  http://w3id.org/write/background-color
+<http://w3id.org/write/background-color> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://w3id.org/write/CalliWritingUnit> ;
+                                         rdfs:comment "The color(s) in the background of the object" ;
+                                         rdfs:label "background color" .
+
+
+###  http://w3id.org/write/calligrapher
+<http://w3id.org/write/calligrapher> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain wd:Q184485 ;
+                                     rdfs:range wd:Q215627 ;
+                                     rdfs:comment "The calligrapher who performs in a performance" ;
+                                     rdfs:label "calligrapher" .
+
+
+###  http://w3id.org/write/creates-artwork
+<http://w3id.org/write/creates-artwork> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain wd:Q184485 ;
+                                        rdfs:range wd:Q4502142 ;
+                                        rdfs:comment "The artwork produced during a performance" ;
+                                        rdfs:label "creates artwork" .
+
+
+###  http://w3id.org/write/dance-company
+<http://w3id.org/write/dance-company> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain wd:Q184485 ;
+                                      rdfs:range wd:Q1400264 ;
+                                      rdfs:comment "The dance company who performs in a performance" ;
+                                      rdfs:label "dance company" .
+
+
+###  http://w3id.org/write/dance-style
+<http://w3id.org/write/dance-style> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain wd:Q184485 ;
+                                    rdfs:comment "The dance style in a performance" ;
+                                    rdfs:label "dance style" .
+
+
+###  http://w3id.org/write/dancer
+<http://w3id.org/write/dancer> rdf:type owl:ObjectProperty ;
+                               rdfs:domain wd:Q184485 ;
+                               rdfs:range wd:Q215627 ;
+                               rdfs:comment "The dancer who performs in a performance" ;
+                               rdfs:label "dancer" .
+
+
+###  http://w3id.org/write/exhibited-artwork
+<http://w3id.org/write/exhibited-artwork> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain wd:Q464980 ;
+                                          rdfs:range <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                                                     wd:Q4502142 ,
+                                                     wd:Q7725310 ;
+                                          rdfs:comment "The artwork(s) exihibited in an exhibition" ;
+                                          rdfs:label "exhibited artwork" .
+
+
+###  http://w3id.org/write/graffiti-type
+<http://w3id.org/write/graffiti-type> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain wd:Q17514 ;
+                                      rdfs:comment "A specific type of a graffiti" ;
+                                      rdfs:label "graffiti type" .
+
+
+###  http://w3id.org/write/has-unit
+<http://w3id.org/write/has-unit> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                                             wd:Q17514 ,
+                                             wd:Q184485 ,
+                                             wd:Q4502142 ;
+                                 rdfs:range <http://w3id.org/write/CalliWritingUnit> ;
+                                 rdfs:comment "An integral part of an artwork that contains some kind of calligraphy or writing." ;
+                                 rdfs:label "has unit" .
+
+
+###  http://w3id.org/write/music-style
+<http://w3id.org/write/music-style> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain wd:Q184485 ;
+                                    rdfs:comment "The music style in a performance" ;
+                                    rdfs:label "music style" .
+
+
+###  http://w3id.org/write/musician
+<http://w3id.org/write/musician> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain wd:Q184485 ;
+                                 rdfs:range wd:Q1400264 ,
+                                            wd:Q215627 ,
+                                            wd:Q43229 ;
+                                 rdfs:comment "The musician who performs in a performance" ;
+                                 rdfs:label "musician" .
+
+
+###  http://w3id.org/write/organisation-type
+<http://w3id.org/write/organisation-type> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain wd:Q43229 ;
+                                          rdfs:comment "The type of an organisation" ;
+                                          rdfs:label "organisation type" .
+
+
+###  http://w3id.org/write/performing-art-type
+<http://w3id.org/write/performing-art-type> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain wd:Q184485 ;
+                                            rdfs:comment "The type of a performing art" ;
+                                            rdfs:label "performing art type" .
+
+
+###  http://w3id.org/write/product-type
+<http://w3id.org/write/product-type> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ;
+                                     rdfs:comment "The type of a product from the class Decorative and Applied Arts." ;
+                                     rdfs:label "product type" .
+
+
+###  http://w3id.org/write/relevant-activity-location
+<http://w3id.org/write/relevant-activity-location> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain wd:Q215627 ;
+                                                   rdfs:comment "The relevant place(s) where the person performs her activity" ;
+                                                   rdfs:label "relevant activity location" .
+
+
+###  http://w3id.org/write/tag-of
+<http://w3id.org/write/tag-of> rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://w3id.org/write/CalliWritingUnit> ;
+                               rdfs:range wd:Q1400264 ,
+                                          wd:Q215627 ;
+                               rdfs:comment "The name of the artist or crew or symbol represented by a tag" ;
+                               rdfs:label "tag of" .
+
+
+###  http://w3id.org/write/uses-artwork
+<http://w3id.org/write/uses-artwork> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain wd:Q184485 ,
+                                                 wd:Q4502142 ;
+                                     rdfs:range wd:Q4502142 ;
+                                     rdfs:comment "An artwork implied in a performance or in the creation of the artwork (use 'creates artwork' for those artworks which have been created during a performance)" ;
+                                     rdfs:label "uses artwork" .
+
+
+###  http://w3id.org/write/visual-element
+<http://w3id.org/write/visual-element> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                                                   wd:Q17514 ;
+                                       rdfs:comment "A visual element (motif)" ;
+                                       rdfs:label "visual element" .
+
+
+###  http://w3id.org/write/wikidata-resource
+<http://w3id.org/write/wikidata-resource> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://w3id.org/write/TraditionalArtwork> ,
+                                                      wd:Q1400264 ,
+                                                      wd:Q215627 ,
+                                                      wd:Q43229 ,
+                                                      wd:Q4502142 ,
+                                                      wd:Q464980 ,
+                                                      wd:Q7725634 ;
+                                          rdfs:comment "The wikidata resource which identifies this record" ;
+                                          rdfs:label "wikidata resource" .
+
+
+###  http://www.wikidata.org/prop/P103
+wdt:P103 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q215627 ;
+         rdfs:comment "The native language of the person" ;
+         rdfs:label "native language" .
+
+
+###  http://www.wikidata.org/prop/P106
+wdt:P106 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q215627 ;
+         rdfs:comment "occupation of a person" ;
+         rdfs:label "occupation" .
+
+
+###  http://www.wikidata.org/prop/P10661
+wdt:P10661 rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain wd:Q464980 ;
+           rdfs:range wd:Q215627 ;
+           rdfs:comment "Artist(s) whose artworks are exhibited in the exhibition in question" ;
+           rdfs:label "exhibited artist" .
+
+
+###  http://www.wikidata.org/prop/P1071
+wdt:P1071 rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                      wd:Q4502142 ,
+                      wd:Q7725310 ;
+          rdfs:comment "The place where the cultural property has been created" ;
+          rdfs:label "location of creation" .
+
+
+###  http://www.wikidata.org/prop/P127
+wdt:P127 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q4502142 ;
+         rdfs:range wd:Q1400264 ,
+                    wd:Q215627 ,
+                    wd:Q43229 ;
+         rdfs:comment "The actor who holds the rights of the cultural property" ;
+         rdfs:label "right holder" .
+
+
+###  http://www.wikidata.org/prop/P1303
+wdt:P1303 rdf:type owl:ObjectProperty ;
+          rdfs:domain wd:Q184485 ;
+          rdfs:comment "musical instrument that a person plays or used in a music occupation" ;
+          rdfs:label "instrument" .
+
+
+###  http://www.wikidata.org/prop/P136
+wdt:P136 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q17514 ;
+         rdfs:comment "The genre of the object" ;
+         rdfs:label "genre" .
+
+
+###  http://www.wikidata.org/prop/P1412
+wdt:P1412 rdf:type owl:ObjectProperty ;
+          rdfs:domain wd:Q215627 ;
+          rdfs:comment "The languages spoken, written or signed by the person. Probably it will contain multiple values" ;
+          rdfs:label "languages spoken, written or signed" .
+
+
+###  http://www.wikidata.org/prop/P144
+wdt:P144 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/CalliWritingUnit> ;
+         rdfs:range wd:Q7725634 ;
+         rdfs:comment "The literary work on which the content unit has been based on" ;
+         rdfs:label "based on" .
+
+
+###  http://www.wikidata.org/prop/P1480
+wdt:P1480 rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://w3id.org/write/CalliWritingUnit> ,
+                      wd:Q7725634 ;
+          rdfs:comment "Accuracy of a source, for example: circa, near, presumably, approximately, etc." ;
+          rdfs:label "circa" .
+
+
+###  http://www.wikidata.org/prop/P1640
+wdt:P1640 rdf:type owl:ObjectProperty ;
+          rdfs:domain wd:Q464980 ;
+          rdfs:range wd:Q215627 ;
+          rdfs:comment "The curator of the exhibition" ;
+          rdfs:label "curator" .
+
+
+###  http://www.wikidata.org/prop/P170
+wdt:P170 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q17514 ,
+                     wd:Q4502142 ,
+                     wd:Q7725310 ;
+         rdfs:range wd:Q1400264 ,
+                    wd:Q215627 ;
+         rdfs:comment "The actor who created the cultural property" ;
+         rdfs:label "creator" .
+
+
+###  http://www.wikidata.org/prop/P175
+wdt:P175 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q184485 ;
+         rdfs:range wd:Q215627 ;
+         rdfs:comment "actor, musician, band or other performer associated with this role or musical work" ;
+         rdfs:label "performer" .
+
+
+###  http://www.wikidata.org/prop/P176
+wdt:P176 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ;
+         rdfs:comment "The place where the cultural property has been created" ;
+         rdfs:label "manufacturer" .
+
+
+###  http://www.wikidata.org/prop/P180
+wdt:P180 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/CalliWritingUnit> ,
+                     <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                     wd:Q17514 ,
+                     wd:Q4502142 ;
+         rdfs:comment "The content depicted by the visual item" ;
+         rdfs:label "depicts" .
+
+
+###  http://www.wikidata.org/prop/P186
+wdt:P186 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/CalliWritingUnit> ,
+                     <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                     wd:Q17514 ,
+                     wd:Q184485 ,
+                     wd:Q4502142 ;
+         rdfs:comment "The material with which the cultural property has been made of" ;
+         rdfs:label "made by material" .
+
+
+###  http://www.wikidata.org/prop/P19
+wdt:P19 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q215627 ;
+        rdfs:comment "The place of birth of the person" ;
+        rdfs:label "place of birth" .
+
+
+###  http://www.wikidata.org/prop/P20
+wdt:P20 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q215627 ;
+        rdfs:comment "The place of death of the person" ;
+        rdfs:label "place of death" .
+
+
+###  http://www.wikidata.org/prop/P2079
+wdt:P2079 rdf:type owl:ObjectProperty ;
+          rdfs:comment "The method or technique through which the item has been produced" ;
+          rdfs:label "tool" .
+
+
+###  http://www.wikidata.org/prop/P21
+wdt:P21 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q215627 ;
+        rdfs:comment "The gender of the person" ;
+        rdfs:label "gender" .
+
+
+###  http://www.wikidata.org/prop/P2283
+wdt:P2283 rdf:type owl:ObjectProperty ;
+          rdfs:comment "The objects (e.g. materials) implied in the making of a performance" ;
+          rdfs:label "uses" .
+
+
+###  http://www.wikidata.org/prop/P27
+wdt:P27 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q215627 ;
+        rdfs:comment "The country of citizenship of the person. It allows multiple values" ;
+        rdfs:label "country of citizenship" .
+
+
+###  http://www.wikidata.org/prop/P276
+wdt:P276 rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain wd:Q1400264 ,
+                     wd:Q17514 ,
+                     wd:Q184485 ,
+                     wd:Q43229 ,
+                     wd:Q464980 ;
+         rdfs:comment "A specific geographical location, e.g. the location of a building" ;
+         rdfs:label "location" .
+
+
+###  http://www.wikidata.org/prop/P287
+wdt:P287 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ;
+         rdfs:range wd:Q1400264 ,
+                    wd:Q215627 ;
+         rdfs:comment "The person or organisation who designed the product" ;
+         rdfs:label "designed by" .
+
+
+###  http://www.wikidata.org/prop/P38
+wdt:P38 rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ;
+        rdfs:comment "The currency of a price for an item" ;
+        rdfs:label "currency" .
+
+
+###  http://www.wikidata.org/prop/P3872
+wdt:P3872 rdf:type owl:ObjectProperty ;
+          rdfs:domain wd:Q464980 ;
+          rdfs:comment "It describes a promoter (private person or organisation) directly interested in the organisation of the event" ;
+          rdfs:label "patronage" .
+
+
+###  http://www.wikidata.org/prop/P407
+wdt:P407 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/CalliWritingUnit> ;
+         rdfs:comment "language associated with this creative work" ;
+         rdfs:label "language" .
+
+
+###  http://www.wikidata.org/prop/P462
+wdt:P462 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/CalliWritingUnit> ,
+                     <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                     wd:Q17514 ,
+                     wd:Q4502142 ;
+         rdfs:comment "The color of the object" ;
+         rdfs:label "color" .
+
+
+###  http://www.wikidata.org/prop/P50
+wdt:P50 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q7725634 ;
+        rdfs:comment "main creator(s) of a written work" ;
+        rdfs:label "author" .
+
+
+###  http://www.wikidata.org/prop/P527
+wdt:P527 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q1400264 ,
+                     wd:Q43229 ;
+         rdfs:range wd:Q215627 ;
+         rdfs:comment "Each of the members of an artistic collective or organisation." ;
+         rdfs:label "has member" .
+
+
+###  http://www.wikidata.org/prop/P608
+wdt:P608 rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                     wd:Q184485 ,
+                     wd:Q4502142 ;
+         rdfs:range wd:Q464980 ;
+         rdfs:comment "The link to the exhibition(s) to which the artwork took part" ;
+         rdfs:label "exhibition history" .
+
+
+###  http://www.wikidata.org/prop/P664
+wdt:P664 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q184485 ,
+                     wd:Q464980 ;
+         rdfs:range wd:Q1400264 ,
+                    wd:Q215627 ,
+                    wd:Q43229 ;
+         rdfs:comment "The organiser (person or organisation) of the event (e.g. Exhibition, Performance)" ;
+         rdfs:label "organiser" .
+
+
+###  http://www.wikidata.org/prop/P749
+wdt:P749 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q43229 ;
+         rdfs:comment "Relation between an organisation and a parent one (select from existing organisations)" ;
+         rdfs:label "affiliated to" .
+
+
+###  http://www.wikidata.org/prop/P84
+wdt:P84 rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ;
+        rdfs:range wd:Q1400264 ,
+                   wd:Q215627 ;
+        rdfs:comment "The architect who designed the building" ;
+        rdfs:label "architect" .
+
+
+###  http://www.wikidata.org/prop/P86
+wdt:P86 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q184485 ;
+        rdfs:range wd:Q215627 ;
+        rdfs:comment "The person who composed the performance" ;
+        rdfs:label "composer" .
+
+
+###  http://www.wikidata.org/prop/P88
+wdt:P88 rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://w3id.org/write/DecorativeAndAppliedArt> ,
+                    wd:Q17514 ,
+                    wd:Q4502142 ;
+        rdfs:comment "The person or organisation who commissioned the cultural property" ;
+        rdfs:label "commissioned by" .
+
+
+###  http://www.wikidata.org/prop/P921
+wdt:P921 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q184485 ;
+         rdfs:comment "primary topic(s) of a work" ;
+         rdfs:label "main subject" .
+
+
+###  http://www.wikidata.org/prop/P9302
+wdt:P9302 rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://w3id.org/write/CalliWritingUnit> ;
+          rdfs:comment "A specific style of a script present in a Calli-Writing Unit." ;
+          rdfs:label "script style" .
+
+
+###  http://www.wikidata.org/prop/P941
+wdt:P941 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q17514 ,
+                     wd:Q184485 ,
+                     wd:Q4502142 ;
+         rdfs:range owl:Thing ,
+                    wd:Q7725634 ;
+         rdfs:comment "work, human, place or event which inspired this creative work or fictional entity" ;
+         rdfs:label "inspired by" .
+
+
+###  https://www.wikidata.org/prop/P282
+<https://www.wikidata.org/prop/P282> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://w3id.org/write/CalliWritingUnit> ;
+                                     rdfs:comment "alphabet, character set or other system of writing used by a language, supported by a typeface" ;
+                                     rdfs:label "writing system" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/write/attributed-name
+<http://w3id.org/write/attributed-name> rdf:type owl:DatatypeProperty ;
+                                        rdfs:comment "The title attributed to the \"Calli-Writing\" unit." ;
+                                        rdfs:label "attributed title" .
+
+
+###  http://w3id.org/write/calligraphic-formation
+<http://w3id.org/write/calligraphic-formation> rdf:type owl:DatatypeProperty ;
+                                               rdfs:comment "The type of calligraphic formation of a person (e.g. familiar, self-taught). Needs to be specified also if it is not present." ;
+                                               rdfs:label "has calligraphic formation" .
+
+
+###  http://w3id.org/write/calligraphic-line
+<http://w3id.org/write/calligraphic-line> rdf:type owl:DatatypeProperty ;
+                                          rdfs:comment "Indicates the presence or absence of a calligraphic line within a \"Calli-Writing\" unit." ;
+                                          rdfs:label "calligraphic line" .
+
+
+###  http://w3id.org/write/character-form
+<http://w3id.org/write/character-form> rdf:type owl:DatatypeProperty ;
+                                       rdfs:comment "The form of the Chinese character present in a \"Calli-Writing\" unit." ;
+                                       rdfs:label "character form" .
+
+
+###  http://w3id.org/write/chinese-concept
+<http://w3id.org/write/chinese-concept> rdf:type owl:DatatypeProperty ;
+                                        rdfs:comment "A philosophical, literary, cultural, social or other concept or notion present in an artwork." ;
+                                        rdfs:label "chinese concept" .
+
+
+###  http://w3id.org/write/chinese-visual-element
+<http://w3id.org/write/chinese-visual-element> rdf:type owl:DatatypeProperty ;
+                                               rdfs:comment "A visual element (motif) from Chinese culture present in an artwork." ;
+                                               rdfs:label "chinese visual element" .
+
+
+###  http://w3id.org/write/description
+<http://w3id.org/write/description> rdf:type owl:DatatypeProperty ;
+                                    rdfs:comment "A textual description of the resource" ;
+                                    rdfs:label "description" .
+
+
+###  http://w3id.org/write/graffiti-style
+<http://w3id.org/write/graffiti-style> rdf:type owl:DatatypeProperty ;
+                                       rdfs:comment "A style used in the creation of a graffiti." ;
+                                       rdfs:label "graffiti style" .
+
+
+###  http://w3id.org/write/has-chengyu
+<http://w3id.org/write/has-chengyu> rdf:type owl:DatatypeProperty ;
+                                    rdfs:comment "The presence of the four-character traditional Chinese idiomatic expression" ;
+                                    rdfs:label "has chengyu" .
+
+
+###  http://w3id.org/write/has-seal
+<http://w3id.org/write/has-seal> rdf:type owl:DatatypeProperty ;
+                                 rdfs:comment "The presence of the seal(s)" ;
+                                 rdfs:label "has seal" .
+
+
+###  http://w3id.org/write/note
+<http://w3id.org/write/note> rdf:type owl:DatatypeProperty ;
+                             rdfs:comment "Notes on resources related to the record (private use only)." ;
+                             rdfs:label "notes" .
+
+
+###  http://w3id.org/write/number-of-characters
+<http://w3id.org/write/number-of-characters> rdf:type owl:DatatypeProperty ;
+                                             rdfs:comment "The number of Chinese characters in a Calli-Writing Unit" ;
+                                             rdfs:label "number of characters" .
+
+
+###  http://w3id.org/write/significance
+<http://w3id.org/write/significance> rdf:type owl:DatatypeProperty ;
+                                     rdfs:comment "Indicates whether the writing in a \"Calli-Writing\" unit has a meaning and its type." ;
+                                     rdfs:label "significance" .
+
+
+###  http://w3id.org/write/song-title
+<http://w3id.org/write/song-title> rdf:type owl:DatatypeProperty ;
+                                   rdfs:comment "The title of a song played during a performance" ;
+                                   rdfs:label "song title" .
+
+
+###  http://w3id.org/write/tag
+<http://w3id.org/write/tag> rdf:type owl:DatatypeProperty ;
+                            rdfs:comment "The signature of the artist" ;
+                            rdfs:label "tag" .
+
+
+###  http://w3id.org/write/trascription-or-translation
+<http://w3id.org/write/trascription-or-translation> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:comment "The transcription and translation of the resource" ;
+                                                    rdfs:label "transcription and translation" .
+
+
+###  http://w3id.org/write/vectorised-digitised-artwork
+<http://w3id.org/write/vectorised-digitised-artwork> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:comment "Indicates whether the artwork has been vectorised or digitised" ;
+                                                     rdfs:label "vectorised or digitised" .
+
+
+###  http://www.wikidata.org/prop/P1132
+wdt:P1132 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The number of performers engaged in a performing art." ;
+          rdfs:label "number of performers" .
+
+
+###  http://www.wikidata.org/prop/P1343
+wdt:P1343 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "A bibliographic source of the resource." ;
+          rdfs:label "described by source" .
+
+
+###  http://www.wikidata.org/prop/P1476
+wdt:P1476 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The title of the resource." ;
+          rdfs:label "title" .
+
+
+###  http://www.wikidata.org/prop/P2047
+wdt:P2047 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The duration of the performing art." ;
+          rdfs:label "duration" .
+
+
+###  http://www.wikidata.org/prop/P2048
+wdt:P2048 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The height of the cultural property (in cm)" ;
+          rdfs:label "height" .
+
+
+###  http://www.wikidata.org/prop/P2049
+wdt:P2049 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The width of the cultural property (in cm)" ;
+          rdfs:label "width" .
+
+
+###  http://www.wikidata.org/prop/P2284
+wdt:P2284 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Published price listed or paid for an artwork." ;
+          rdfs:label "price" .
+
+
+###  http://www.wikidata.org/prop/P2386
+wdt:P2386 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Diameter of a circular or spherical object (in cm)" ;
+          rdfs:label "diameter" .
+
+
+###  http://www.wikidata.org/prop/P2561
+wdt:P2561 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Name of the person, artistic collective or organisation." ;
+          rdfs:label "name" .
+
+
+###  http://www.wikidata.org/prop/P2610
+wdt:P2610 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The thickness of the cultural property (in cm)" ;
+          rdfs:label "thickness" .
+
+
+###  http://www.wikidata.org/prop/P569
+wdt:P569 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The date of birth of the person" ;
+         rdfs:label "date of birth" .
+
+
+###  http://www.wikidata.org/prop/P570
+wdt:P570 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The date of death of the person" ;
+         rdfs:label "date of death" .
+
+
+###  http://www.wikidata.org/prop/P571
+wdt:P571 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The date when the artwork or the artistic collective / organisation was created." ;
+         rdfs:label "date of creation" .
+
+
+###  http://www.wikidata.org/prop/P580
+wdt:P580 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The date when the event started" ;
+         rdfs:label "start time" .
+
+
+###  http://www.wikidata.org/prop/P582
+wdt:P582 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The date when the event finished" ;
+         rdfs:label "end time" .
+
+
+###  http://www.wikidata.org/prop/P585
+wdt:P585 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Date in which a performing art / event occurred." ;
+         rdfs:label "date" .
+
+
+###  http://www.wikidata.org/prop/P6375
+wdt:P6375 rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The street address of the building" ;
+          rdfs:label "street address" .
+
+
+###  http://www.wikidata.org/prop/P742
+wdt:P742 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The pseudonym of the artist" ;
+         rdfs:label "pseudonym" .
+
+
+###  http://www.wikidata.org/prop/P856
+wdt:P856 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The link the website of the resource" ,
+                      "The link to the official website of the resource" ;
+         rdfs:label "official website" ,
+                    "website link" .
+
+
+###  http://www.wikidata.org/prop/P8570
+wdt:P8570 rdf:type owl:DatatypeProperty ;
+          rdfs:comment """front and back matter of a book, preface, table of contents, foreword and other
+DA CHIEDERE!!!""" ;
+          rdfs:label "has colophon" .
+
+
+###  http://www.wikidata.org/prop/P973
+wdt:P973 rdf:type owl:DatatypeProperty ;
+         rdfs:comment "The link to the website where the resource has been described" ;
+         rdfs:label "described at URL" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/write/CalliWritingUnit
+<http://w3id.org/write/CalliWritingUnit> rdf:type owl:Class ;
+                                         rdfs:comment "A content component of the described cultural item which somehow recognised to be contemporary calligraphy" ;
+                                         rdfs:label "Calli-Writing Unit" .
+
+
+###  http://w3id.org/write/DecorativeAndAppliedArt
+<http://w3id.org/write/DecorativeAndAppliedArt> rdf:type owl:Class ;
+                                                rdfs:comment "An artwork categorised as belonging to Decorative and Applied Arts" ;
+                                                rdfs:label "Decorative and Applied Art" .
+
+
+###  http://w3id.org/write/LifeEvent
+<http://w3id.org/write/LifeEvent> rdf:type owl:Class ;
+                                  rdfs:comment "A life event (e.g. employment, residence, education)" ;
+                                  rdfs:label "Life Event" .
+
+
+###  http://w3id.org/write/TraditionalArtwork
+<http://w3id.org/write/TraditionalArtwork> rdf:type owl:Class ;
+                                           rdfs:comment "An artwork categorised as being made before 1980" ;
+                                           rdfs:label "Traditional Artwork" .
+
+
+###  http://www.wikidata.org/entity/Q1400264
+wd:Q1400264 rdf:type owl:Class ;
+            rdfs:comment "group of artists who create works together" ;
+            rdfs:label "Artist collective" .
+
+
+###  http://www.wikidata.org/entity/Q17514
+wd:Q17514 rdf:type owl:Class ;
+          rdfs:comment "Writing or drawing etched, scratched, scribbled, or sprayed illicitly on a wall or other surface" ;
+          rdfs:label "Graffiti" .
+
+
+###  http://www.wikidata.org/entity/Q184485
+wd:Q184485 rdf:type owl:Class ;
+           rdfs:comment "Art form that is performed for an audience" ;
+           rdfs:label "Performing Arts" .
+
+
+###  http://www.wikidata.org/entity/Q215627
+wd:Q215627 rdf:type owl:Class ;
+           rdfs:comment "A human being" ;
+           rdfs:label "Person" .
+
+
+###  http://www.wikidata.org/entity/Q43229
+wd:Q43229 rdf:type owl:Class ;
+          rdfs:comment "Organisation (a group of people), e.g. institutions, crews etc" ;
+          rdfs:label "Organisation" .
+
+
+###  http://www.wikidata.org/entity/Q4502142
+wd:Q4502142 rdf:type owl:Class ;
+            rdfs:comment "Work of art that is primary visual" ;
+            rdfs:label "Visual Artwork" .
+
+
+###  http://www.wikidata.org/entity/Q464980
+wd:Q464980 rdf:type owl:Class ;
+           rdfs:comment "organized presentation and display of a selection of items or pictures" ;
+           rdfs:label "Exhibition" .
+
+
+###  http://www.wikidata.org/entity/Q732577
+wd:Q732577 rdf:type owl:Class ;
+           rdfs:comment "content made available to the general public" ;
+           rdfs:label "Publication" .
+
+
+###  http://www.wikidata.org/entity/Q7725310
+wd:Q7725310 rdf:type owl:Class ;
+            rdfs:comment "Ordered set of creative works" ;
+            rdfs:label "Series of Creative Works" .
+
+
+###  http://www.wikidata.org/entity/Q7725634
+wd:Q7725634 rdf:type owl:Class ;
+            rdfs:comment "Creative work by a writer created with aesthetic or recreative purposes" ;
+            rdfs:label "Literary Work" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
