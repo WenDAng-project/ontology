@@ -1,27 +1,33 @@
-@prefix : <https://wendang-project.github.io/ontology/> .
+@prefix write: <https://wendang-project.github.io/ontology/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix wdt: <http://www.wikidata.org/prop/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix write: <https://wendang-project.github.io/ontology/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://wendang-project.github.io/ontology/> .
 
 <https://wendang-project.github.io/ontology/> rdf:type owl:Ontology ;
                                                owl:versionIRI write:v1.0.0 ;
                                                dcterms:creator "Katarina Lučić" ;
+<<<<<<< HEAD
                                                dcterms:contributor "Valentina Pasqual (former contributor)" ;
+=======
+>>>>>>> 1336d334781ce24d1a00d03bbba8798786771f4a
                                                dcterms:license "This work is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/)." ;
                                                dcterms:modified "2025-02-05T00:00:00" ;
                                                dcterms:subject "\"Chinese calligraphy\", \"contemporary calligraphy\", \"contemporary arts\", \"visual arts\", \"graffiti\", \"performing art\", \"decorative and applied arts\"" ;
                                                dcterms:version "1.0.0" ;
                                                rdfs:comment "This ontology is designed to represent the intangible cultural heritage of Chinese calligraphy as it appears in contemporary artworks, alongside the broader tangible cultural heritage of contemporary arts. The WRITE ontology provides a structured way to describe artworks, their contextual elements, and the calligraphy integrated within them. Additionally, it facilitates the identification of similarities and differences between contemporary and traditional calligraphy, enabling a deeper understanding of their evolution and artistic connections." ,
                                                             "This ontology was developed with input from domain experts, all of whom are members of the WRITE project team. To learn more about the project, please visit: https://writecalligraphyproject.eu/." ;
+<<<<<<< HEAD
                                                rdfs:label "WRITE ontology" .
+=======
+                                               rdfs:label "WRITE ontology" ;
+                                               dcterms:contributor "Valentina Pasqual (former contributor)" .
+>>>>>>> 1336d334781ce24d1a00d03bbba8798786771f4a
 
 #################################################################
 #    Annotation properties
