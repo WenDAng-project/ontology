@@ -1,4 +1,4 @@
-@prefix write: <https://wendang-project.github.io/ontology/> .
+@prefix write: <http://w3id.org/write/ontology/#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix wdt: <http://www.wikidata.org/prop/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,7 +9,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<https://wendang-project.github.io/ontology/> rdf:type owl:Ontology ;
+<http://w3id.org/write/ontology/#> rdf:type owl:Ontology ;
                                                owl:versionIRI write:v2.0.0 ;
                                                dcterms:creator "Katarina Lučić" ;
                                                dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -81,7 +81,7 @@ wdt:P84 rdf:type owl:ObjectProperty ;
         rdfs:comment "Architect or architectural firm responsible for designing a building or other structure." ;
         rdfs:label "architect" .
 
-###  https://wendang-project.github.io/ontology/artistic-collective-type
+###  http://w3id.org/write/ontology/#artistic-collective-type
 write:artistic-collective-type rdf:type owl:ObjectProperty ;
                                rdfs:domain wd:Q1400264 ;
                                rdfs:range owl:Thing ;
@@ -89,7 +89,7 @@ write:artistic-collective-type rdf:type owl:ObjectProperty ;
                                rdfs:label "artistic collective type" .
 
 
-###  https://wendang-project.github.io/ontology/artwork-type
+###  http://w3id.org/write/ontology/#artwork-type
 write:artwork-type rdf:type owl:ObjectProperty ;
                    rdfs:domain wd:Q4502142 ,
                                write:TraditionalArtwork ;
@@ -106,7 +106,7 @@ wdt:P50 rdf:type owl:ObjectProperty ;
         rdfs:label "author" .
 
 
-###  https://wendang-project.github.io/ontology/background-color
+###  http://w3id.org/write/ontology/#background-color
 write:background-color rdf:type owl:ObjectProperty ;
                        rdfs:domain write:CalliWritingUnit ;
                        rdfs:range owl:Thing ;
@@ -123,7 +123,7 @@ wdt:P144 rdf:type owl:ObjectProperty ;
          rdfs:label "based on" .
 
 
-###  https://wendang-project.github.io/ontology/calligrapher
+###  http://w3id.org/write/ontology/#calligrapher
 write:calligrapher rdf:type owl:ObjectProperty ;
                    rdfs:domain wd:Q184485 ;
                    rdfs:range wd:Q215627 ;
@@ -131,7 +131,7 @@ write:calligrapher rdf:type owl:ObjectProperty ;
                    rdfs:label "calligrapher" .
 
 
-###  https://wendang-project.github.io/ontology/character-form
+###  http://w3id.org/write/ontology/#character-form
 write:character-form rdf:type owl:ObjectProperty ;
                      rdfs:domain write:CalliWritingUnit ;
                      rdfs:range owl:Thing ;
@@ -139,7 +139,7 @@ write:character-form rdf:type owl:ObjectProperty ;
                      rdfs:label "character form" .
 
 
-###  https://wendang-project.github.io/ontology/chinese-concept
+###  http://w3id.org/write/ontology/#chinese-concept
 write:chinese-concept rdf:type owl:ObjectProperty ;
                       rdfs:domain wd:Q17514 ,
                                   wd:Q184485 ,
@@ -149,7 +149,7 @@ write:chinese-concept rdf:type owl:ObjectProperty ;
                       rdfs:label "Chinese concept" .
 
 
-###  https://wendang-project.github.io/ontology/chinese-visual-element
+###  http://w3id.org/write/ontology/#chinese-visual-element
 write:chinese-visual-element rdf:type owl:ObjectProperty ;
                              rdfs:domain wd:Q17514 ,
                                          wd:Q184485 ,
@@ -208,7 +208,7 @@ wdt:P170 rdf:type owl:ObjectProperty ;
          rdfs:label "creator" .
 
 
-###  https://wendang-project.github.io/ontology/creates-artwork
+###  http://w3id.org/write/ontology/#creates-artwork
 write:creates-artwork rdf:type owl:ObjectProperty ;
                       rdfs:domain wd:Q184485 ;
                       rdfs:range wd:Q4502142 ;
@@ -251,7 +251,7 @@ wdt:P10661 rdf:type owl:ObjectProperty ;
            rdfs:label "exhibited artist" .
 
 
-###  https://wendang-project.github.io/ontology/exhibited-artwork
+###  http://w3id.org/write/ontology/#exhibited-artwork
 write:exhibited-artwork rdf:type owl:ObjectProperty ;
                         rdfs:domain wd:Q464980 ;
                         rdfs:range wd:Q184485 ,
@@ -296,7 +296,7 @@ wdt:P136 rdf:type owl:ObjectProperty ;
          rdfs:label "graffiti genre" .
 
 
-###  https://wendang-project.github.io/ontology/graffiti-style
+###  http://w3id.org/write/ontology/#graffiti-style
 write:graffiti-style rdf:type owl:ObjectProperty ;
                      rdfs:domain wd:Q17514 ;
                      rdfs:range skos:Concept ;
@@ -304,7 +304,7 @@ write:graffiti-style rdf:type owl:ObjectProperty ;
                      rdfs:label "graffiti style" .
 
 
-###  https://wendang-project.github.io/ontology/graffiti-type
+###  http://w3id.org/write/ontology/#graffiti-type
 write:graffiti-type rdf:type owl:ObjectProperty ;
                     rdfs:domain wd:Q17514 ;
                     rdfs:range skos:Concept ;
@@ -321,7 +321,7 @@ wdt:P527 rdf:type owl:ObjectProperty ;
          rdfs:label "has member" .
 
 
-###  https://wendang-project.github.io/ontology/has-unit
+###  http://w3id.org/write/ontology/#has-unit
 write:has-unit rdf:type owl:ObjectProperty ;
                rdfs:domain write:WRITEcollections ;
                rdfs:range write:CalliWritingUnit ;
@@ -410,7 +410,7 @@ wdt:P106 rdf:type owl:ObjectProperty ;
          rdfs:label "occupation" .
 
 
-###  https://wendang-project.github.io/ontology/organisation-type
+###  http://w3id.org/write/ontology/#organisation-type
 write:organisation-type rdf:type owl:ObjectProperty ;
                         rdfs:domain wd:Q43229 ;
                         rdfs:range owl:Thing ;
@@ -437,7 +437,7 @@ wdt:P1412 rdf:type owl:ObjectProperty ;
           rdfs:label "other language" .
 
 
-###  https://wendang-project.github.io/ontology/other-visual-element
+###  http://w3id.org/write/ontology/#other-visual-element
 write:visual-element rdf:type owl:ObjectProperty ;
                      rdfs:domain wd:Q17514 ,
                                  write:DecorativeAndAppliedArt ;
@@ -463,7 +463,7 @@ wdt:P175 rdf:type owl:ObjectProperty ;
          rdfs:label "performer" .
 
 
-###  https://wendang-project.github.io/ontology/performing-art-type
+###  http://w3id.org/write/ontology/#performing-art-type
 write:performing-art-type rdf:type owl:ObjectProperty ;
                           rdfs:domain wd:Q184485 ;
                           rdfs:range skos:Concept ;
@@ -487,7 +487,7 @@ wdt:P20 rdf:type owl:ObjectProperty ;
         rdfs:label "place of death" .
 
 
-###  https://wendang-project.github.io/ontology/product-type
+###  http://w3id.org/write/ontology/#product-type
 write:product-type rdf:type owl:ObjectProperty ;
                    rdfs:domain write:DecorativeAndAppliedArt ;
                    rdfs:range owl:Thing ;
@@ -495,7 +495,7 @@ write:product-type rdf:type owl:ObjectProperty ;
                    rdfs:label "product type" .
 
 
-###  https://wendang-project.github.io/ontology/relevant-activity-location
+###  http://w3id.org/write/ontology/#relevant-activity-location
 write:relevant-activity-location rdf:type owl:ObjectProperty ;
                                  rdfs:domain wd:Q215627 ;
                                  rdfs:range owl:Thing ;
@@ -521,7 +521,7 @@ wdt:P9302 rdf:type owl:ObjectProperty ;
           rdfs:label "script style" .
 
 
-###  https://wendang-project.github.io/ontology/tag-of
+###  http://w3id.org/write/ontology/#tag-of
 write:tag-of rdf:type owl:ObjectProperty ;
              rdfs:domain write:CalliWritingUnit ;
              rdfs:range wd:Q1400264 ,
@@ -539,7 +539,7 @@ wdt:P2283 rdf:type owl:ObjectProperty ;
           rdfs:label "tool" .
 
 
-###  https://wendang-project.github.io/ontology/uses-artwork
+###  http://w3id.org/write/ontology/#uses-artwork
 write:uses-artwork rdf:type owl:ObjectProperty ;
                    rdfs:domain wd:Q184485 ,
                                wd:Q4502142 ;
@@ -548,7 +548,7 @@ write:uses-artwork rdf:type owl:ObjectProperty ;
                    rdfs:label "uses artwork" .
 
 
-###  https://wendang-project.github.io/ontology/wikidata-resource
+###  http://w3id.org/write/ontology/#wikidata-resource
 write:wikidata-resource rdf:type owl:ObjectProperty ;
                         rdfs:domain wd:Q1400264 ,
                                     wd:Q215627 ,
@@ -584,7 +584,7 @@ wdt:P1480 rdf:type owl:DatatypeProperty ;
           rdfs:label "accuracy" .
 
 
-###  https://wendang-project.github.io/ontology/attributed-title
+###  http://w3id.org/write/ontology/#attributed-title
 write:attributed-title rdf:type owl:DatatypeProperty ;
                       rdfs:domain write:CalliWritingUnit ;
                       rdfs:range xsd:string ;
@@ -592,7 +592,7 @@ write:attributed-title rdf:type owl:DatatypeProperty ;
                       rdfs:label "attributed title" .
 
 
-###  https://wendang-project.github.io/ontology/big-characters-calligraphy
+###  http://w3id.org/write/ontology/#big-characters-calligraphy
 write:big-characters-calligraphy rdf:type owl:DatatypeProperty ;
                                  rdfs:domain write:CalliWritingUnit ;
                                  rdfs:range xsd:string ;
@@ -600,7 +600,7 @@ write:big-characters-calligraphy rdf:type owl:DatatypeProperty ;
                                  rdfs:label "big characters calligraphy" .
 
 
-###  https://wendang-project.github.io/ontology/calligraphic-line
+###  http://w3id.org/write/ontology/#calligraphic-line
 write:calligraphic-line rdf:type owl:DatatypeProperty ;
                         rdfs:domain write:CalliWritingUnit ;
                         rdfs:range xsd:string ;
@@ -608,7 +608,7 @@ write:calligraphic-line rdf:type owl:DatatypeProperty ;
                         rdfs:label "calligraphic line" .
 
 
-###  https://wendang-project.github.io/ontology/calligraphic-training
+###  http://w3id.org/write/ontology/#calligraphic-training
 write:calligraphic-training rdf:type owl:DatatypeProperty ;
                              rdfs:domain wd:Q215627 ;
                              rdfs:range xsd:string ;
@@ -667,7 +667,7 @@ wdt:P1343 rdf:type owl:DatatypeProperty ;
           rdfs:label "described by source" .
 
 
-###  https://wendang-project.github.io/ontology/description
+###  http://w3id.org/write/ontology/#description
 write:description rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:string ;
                   rdfs:comment "Textual description of the resource." ;
@@ -699,7 +699,7 @@ wdt:P582 rdf:type owl:DatatypeProperty ;
          rdfs:label "end time" .
 
 
-###  https://wendang-project.github.io/ontology/has-chengyu
+###  http://w3id.org/write/ontology/#has-chengyu
 write:has-chengyu rdf:type owl:DatatypeProperty ;
                   rdfs:domain wd:Q17514 ;
                   rdfs:range xsd:string ;
@@ -718,7 +718,7 @@ wdt:P8570 rdf:type owl:DatatypeProperty ;
           rdfs:label "has colophon" .
 
 
-###  https://wendang-project.github.io/ontology/has-seal
+###  http://w3id.org/write/ontology/#has-seal
 write:has-seal rdf:type owl:DatatypeProperty ;
                rdfs:domain wd:Q17514 ,
                            wd:Q4502142 ,
@@ -749,14 +749,14 @@ wdt:P2561 rdf:type owl:DatatypeProperty ;
           rdfs:label "name" .
 
 
-###  https://wendang-project.github.io/ontology/note
+###  http://w3id.org/write/ontology/#note
 write:note rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:string ;
            rdfs:comment "Notes of any kind related to the item (private use only)." ;
            rdfs:label "notes" .
 
 
-###  https://wendang-project.github.io/ontology/number-of-characters
+###  http://w3id.org/write/ontology/#number-of-characters
 write:number-of-characters rdf:type owl:DatatypeProperty ;
                            rdfs:domain write:CalliWritingUnit ;
                            rdfs:range xsd:integer ;
@@ -794,7 +794,7 @@ wdt:P742 rdf:type owl:DatatypeProperty ;
          rdfs:label "pseudonym" .
 
 
-###  https://wendang-project.github.io/ontology/significance
+###  http://w3id.org/write/ontology/#significance
 write:significance rdf:type owl:DatatypeProperty ;
                    rdfs:domain write:CalliWritingUnit ;
                    rdfs:range xsd:string ;
@@ -819,7 +819,7 @@ wdt:P6375 rdf:type owl:DatatypeProperty ;
           rdfs:label "street address" .
 
 
-###  https://wendang-project.github.io/ontology/tag
+###  http://w3id.org/write/ontology/#tag
 write:tag rdf:type owl:DatatypeProperty ;
           rdfs:domain wd:Q215627 ;
           rdfs:range xsd:string ;
@@ -839,7 +839,7 @@ wdt:P1476 rdf:type owl:DatatypeProperty ;
           rdfs:label "title" .
 
 
-###  https://wendang-project.github.io/ontology/transcription-and-translation
+###  http://w3id.org/write/ontology/#transcription-and-translation
 write:transcription-and-translation rdf:type owl:DatatypeProperty ;
                                   rdfs:domain wd:Q7725634 ,
                                               write:CalliWritingUnit ;
@@ -848,7 +848,7 @@ write:transcription-and-translation rdf:type owl:DatatypeProperty ;
                                   rdfs:label "transcription and translation" .
 
 
-###  https://wendang-project.github.io/ontology/vectorised-digitised-artwork
+###  http://w3id.org/write/ontology/#vectorised-digitised-artwork
 write:vectorised-digitised-artwork rdf:type owl:DatatypeProperty ;
                                    rdfs:domain wd:Q4502142 ,
                                                write:CalliWritingUnit ;
@@ -880,13 +880,13 @@ wd:Q1400264 rdf:type owl:Class ;
             rdfs:label "Artistic Collective" .
 
 
-###  https://wendang-project.github.io/ontology/CalliWritingUnit
+###  http://w3id.org/write/ontology/#CalliWritingUnit
 write:CalliWritingUnit rdf:type owl:Class ;
                        rdfs:comment "In an artwork, a content unit featuring elements of calligraphy and / or writing, in a form of meaningful writing, set of signs and / or set of lines." ;
                        rdfs:label "Calli-Writing Unit" .
 
 
-###  https://wendang-project.github.io/ontology/DecorativeAndAppliedArt
+###  http://w3id.org/write/ontology/#DecorativeAndAppliedArt
 write:DecorativeAndAppliedArt rdf:type owl:Class ;
                               rdfs:subClassOf write:WRITEcollections ;
                               rdfs:comment "A class that includes artworks from the WRITE collection specifically categorised under Decorative and Applied Arts." ;
@@ -937,7 +937,7 @@ wd:Q7725310 rdf:type owl:Class ;
             rdfs:label "Series of Creative Works" .
 
 
-###  https://wendang-project.github.io/ontology/TraditionalArtwork
+###  http://w3id.org/write/ontology/#TraditionalArtwork
 write:TraditionalArtwork rdf:type owl:Class ;
                          rdfs:comment "Artwork that follows traditional calligraphic canons and / or is created before 1980. This artwork does not belong to any of the four WRITE collections, but it is somehow related to one or more artworks from these collections." ;
                          rdfs:label "Traditional Artwork" .
@@ -950,7 +950,7 @@ wd:Q4502142 rdf:type owl:Class ;
             rdfs:label "Visual Arts" .
 
 
-###  https://wendang-project.github.io/ontology/WRITEcollections
+###  http://w3id.org/write/ontology/#WRITEcollections
 write:WRITEcollections rdf:type owl:Class ;
                        rdfs:comment "The superclass that encompasses artworks from four distinct types of art (Decorative and Applied Arts, Graffiti, Performing Arts and Visual Arts). There are four WRITE collections, one for each art category." ;
                        rdfs:label "WRITE collections" .
