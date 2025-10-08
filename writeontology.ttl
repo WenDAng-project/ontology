@@ -13,13 +13,14 @@
                                                owl:versionIRI write:v2.0.0 ;
                                                dcterms:creator "Katarina Lučić" ;
                                                dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                               dcterms:created "2024-02-05T00:00:00" ;
                                                dcterms:modified "2025-01-09T00:00:00" ;
                                                dcterms:subject "\"Chinese calligraphy\", \"contemporary calligraphy\", \"contemporary arts\", \"visual arts\", \"graffiti\", \"performing arts\", \"decorative and applied arts\"" ;
                                                dcterms:version "2.0.0" ;
                                                rdfs:comment "This ontology is designed to represent the intangible cultural heritage of Chinese calligraphy as it appears in contemporary artworks, alongside the broader tangible cultural heritage of contemporary arts. The WRITE ontology provides a structured way to describe artworks, their contextual elements, and the calligraphy integrated within them. Additionally, it facilitates the identification of similarities and differences between contemporary and traditional calligraphy, enabling a deeper understanding of their evolution and artistic connections." ,
                                                             "The ontology was developed with input from domain experts, all of whom are members of the WRITE project team. To learn more about the project, please visit: https://writecalligraphyproject.eu/." ;
                                                rdfs:label "WRITE ontology" ;
-                                               dcterms:contributor "Valentina Pasqual (former contributor)" .
+                                               dcterms:contributor "Valentina Pasqual (former contributor on the version 1.0.0)" .
 
 #################################################################
 #    Annotation properties
