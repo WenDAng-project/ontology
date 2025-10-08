@@ -19,7 +19,7 @@ The WRITE ontology can be accessed through:
 - 🔗 **pyLODE visualisation, on the w3id persistent URI:** [https://w3id.org/write/ontology](https://w3id.org/write/ontology)  
   *Permanent and resolvable URIs for all classes and properties.*
 
-- 💻 **GitHub Repository:** https://github.com/WenDAng-project/ontology](https://github.com/WenDAng-project/ontology)  
+- 💻 **GitHub Repository:** [https://github.com/WenDAng-project/ontology](https://github.com/WenDAng-project/ontology)  
   *Latest version, OWL/Turtle files, and documentation.*
 
 ---
