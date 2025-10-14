@@ -4,7 +4,7 @@ This ontology is designed to represent the intangible cultural heritage of Chine
 
 It is developed and maintained within the **WenDAng - WRITE Digital Archive project**.
 
-📅 **Latest version:** [v2.0.0 (2025-02-05)](https://github.com/WenDAng-project/ontology/releases/tag/v.2.0.0)  
+📅 **Latest version:** [v1.0.0 (2025-02-05)](https://github.com/WenDAng-project/ontology/releases/tag/v1.0.0)  
 📘 **Full changelog:** [View CHANGELOG.md →](CHANGELOG.md)
 
 ---
