@@ -8,7 +8,7 @@ This document ensures that all modifications are traceable and citable across re
 
 ---
 
-## [v2.0.0] – 2025-02-05
+## [v1.0.0] – 2025-02-05
 **Major update (current version)**
 
 - Transformed the initial data model into a **fully fledged OWL ontology**
@@ -22,10 +22,12 @@ This document ensures that all modifications are traceable and citable across re
 
   ---
 
-## [v1.0.0] – 2020-04-09
-**Initial release (data model)**
+## [v0.1.0] – 2020-04-09
+**Core draft (data model)**
 
-The first version of the WRITE ontology was created by the former collaborator, as a structured RDF-based data model.  
+The core draft version of the WRITE data model was created by the former collaborator, as a structured RDF-based data model.  
 It included preliminary concepts and properties to capture key entities in the domain, with minimum descriptions and without domain / range declarations.  
-Turtle files were provided for basic semantic interoperability.
+Turtle files were provided for basic semantic interoperability.  
+
+Note: the base IRI http://w3id.org/write/ontology/ was included in this draft as a provisional placeholder before the namespace was registered and resolvable. As of the first release (v1.0.0, 2025-02-05), the namespace is registered and resolvable.
 
