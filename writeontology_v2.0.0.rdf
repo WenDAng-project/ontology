@@ -1,0 +1,1533 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/write/ontology#"
+     xml:base="https://w3id.org/write/ontology"
+     xmlns:wd="http://www.wikidata.org/entity/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wdt="http://www.wikidata.org/prop/direct/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:write="https://w3id.org/write/ontology#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/write/ontology">
+        <owl:versionIRI rdf:resource="https://w3id.org/write/ontology#v2.0.0"/>
+        <dcterms:contributor>Adriana Iezzi (domain expert)
+Martina Merenda (domain expert)
+Daniele Caccin (domain expert)
+Marta R. Bisceglia (domain expert)
+Valentina Pasqual (former contributor on the core draft v0.1.0)</dcterms:contributor>
+        <dcterms:creator>Katarina Lučić</dcterms:creator>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-28</dcterms:modified>
+        <dcterms:subject>&quot;Chinese calligraphy&quot;, &quot;contemporary calligraphy&quot;, &quot;contemporary arts&quot;, &quot;visual arts&quot;, &quot;graffiti&quot;, &quot;performing art&quot;, &quot;decorative and applied arts&quot;</dcterms:subject>
+        <dcterms:version>2.0.0</dcterms:version>
+        <rdfs:comment xml:lang="en">The WRITE ontology provides a semantic model for contemporary Chinese calligraphy and its intersections with visual, performing, graffiti, and decorative and applied arts. It describes artworks, their calligraphic and writing-like components, literary works, people in different roles, exhibitions, artwork series, and other contextual elements, supporting their structured representation and analysis within the WRITE knowledge graph.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology was developed in collaboration with the domain experts, all of whom are members of the WRITE project team. To learn more about the project, please visit: https://writecalligraphyproject.eu/.</rdfs:comment>
+        <rdfs:label>WRITE ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/version -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/version"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- https://w3id.org/write/ontology#accuracy -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/write/ontology#accuracy">
+        <rdfs:comment>Indicates that a value is approximate or uncertain.</rdfs:comment>
+        <rdfs:label>accuracy</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P103 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P103">
+        <rdfs:comment>Language or languages a person has learned from early childhood.</rdfs:comment>
+        <rdfs:label>native language</rdfs:label>
+        <skos:scopeNote>Native language of the person. For other languages that the person speaks, writes or signs, use &apos;uses language&apos;.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P106 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P106">
+        <rdfs:comment>Occupation of the person.</rdfs:comment>
+        <rdfs:label>occupation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P10661 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P10661">
+        <rdfs:comment>Intellectual or creative entity (person or organisation) responsible for the elements exhibited.</rdfs:comment>
+        <rdfs:label>exhibited artist</rdfs:label>
+        <skos:scopeNote>Artist(s) whose artworks are displayed in the exhibition.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P1071 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P1071">
+        <rdfs:comment>Place where the item was conceived or made.</rdfs:comment>
+        <rdfs:label>location of creation</rdfs:label>
+        <skos:scopeNote>Indicates the city or country where a specific artwork or artworks&apos; series were created.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P127 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P127">
+        <rdfs:comment>Owner of the subject.</rdfs:comment>
+        <rdfs:label>owner</rdfs:label>
+        <skos:scopeNote>Person, artistic collective or organisation who is the proprietor of the artwork.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P1303 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P1303">
+        <rdfs:comment>Musical instrument that a person plays or teaches or used in a music occupation.</rdfs:comment>
+        <rdfs:label>musical instrument</rdfs:label>
+        <skos:scopeNote>Musical instrument used during a performing arts event.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P1412 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P1412">
+        <rdfs:comment>Language(s) that a person or a people speaks, writes or signs, including the native language(s).</rdfs:comment>
+        <rdfs:label>uses language</rdfs:label>
+        <skos:scopeNote>Languages other than native, that the person speaks, writes or signs.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P144 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P144">
+        <rdfs:comment>The work(s) or inputs used as the basis for subject item.</rdfs:comment>
+        <rdfs:label>based on</rdfs:label>
+        <skos:scopeNote>Literary work on which the Calli-Writing unit is based.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P1640 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P1640">
+        <rdfs:comment>Content specialist responsible for the collection or exhibition.</rdfs:comment>
+        <rdfs:label>curator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P170 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P170">
+        <rdfs:comment>Maker of the creative work or other object.</rdfs:comment>
+        <rdfs:label>creator</rdfs:label>
+        <skos:scopeNote>Person or artistic collective that created the visual or graffiti artwork, an artwork series, or a traditional artwork.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P175 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P175">
+        <rdfs:comment>Actor, musician, band or other performer associated with this role or musical work.</rdfs:comment>
+        <rdfs:label>performer</rdfs:label>
+        <skos:scopeNote>Person or artistic collective that took part in a performing arts event as a performer, including roles such as dancer, musician, singer, or actor.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P176 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P176">
+        <rdfs:comment>Manufacturer or producer of the product.</rdfs:comment>
+        <rdfs:label>manufacturer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P179 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P179">
+        <rdfs:comment>Series which contains the subject.</rdfs:comment>
+        <rdfs:label>is part of series</rdfs:label>
+        <skos:scopeNote>Connects the artwork to the series it belongs to.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P180 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P180">
+        <rdfs:comment>Entity visually depicted in an image, literarily described in a work, or otherwise incorporated into an audiovisual or other medium.</rdfs:comment>
+        <rdfs:label>depicts</rdfs:label>
+        <skos:scopeNote>Relates an artwork or a &quot;Calli-Writing&quot; unit to a concrete, thematic, conceptual, formal, aesthetic, or procedural element that contributes to its content or interpretation.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P186 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P186">
+        <rdfs:comment>Material the subject or the object is made of or derived from.</rdfs:comment>
+        <rdfs:label>made from material</rdfs:label>
+        <skos:scopeNote>Material used in the creation of the artwork / Calli-Writing unit, applied to a support (e.g. ink, paper).</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P19 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P19">
+        <rdfs:comment>Most specific known birth location of a person.</rdfs:comment>
+        <rdfs:label>place of birth</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P20 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P20">
+        <rdfs:comment>Most specific known death location of a person.</rdfs:comment>
+        <rdfs:label>place of death</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P21 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P21">
+        <rdfs:comment>Gender identity of the person.</rdfs:comment>
+        <rdfs:label>gender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P27 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P27">
+        <rdfs:comment>Country of citizenship of the person.</rdfs:comment>
+        <rdfs:label>country of citizenship</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P276 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P276">
+        <rdfs:comment>Location of the object, structure or event.</rdfs:comment>
+        <rdfs:label>location</rdfs:label>
+        <skos:scopeNote>Indicates a specific geographical location (such as a building, city, or country) where an event took place, an artwork is located, or an organisation / artistic collective is based.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P282 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P282">
+        <rdfs:comment>Alphabet, character set or other system of writing used by a language, word, or text, supported by a typeface.</rdfs:comment>
+        <rdfs:label>writing system</rdfs:label>
+        <skos:scopeNote>Characters, alphabet or other system of writing used in a Calli-Writing unit, including the non-traditional writing systems such as Dunhuang Musical score.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P287 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P287">
+        <rdfs:comment>Person or organisation which designed the object. For buildings use &apos;architect&apos;.</rdfs:comment>
+        <rdfs:label>designer</rdfs:label>
+        <skos:scopeNote>Person or artistic collective responsible for designing a piece of decorative and applied art.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P407 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P407">
+        <rdfs:comment>Language associated with this creative work (such as books, shows, songs, broadcasts or websites) or a name.</rdfs:comment>
+        <rdfs:label>language</rdfs:label>
+        <skos:scopeNote>Language associated with the Calli-Writing unit.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P462 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P462">
+        <rdfs:comment>Colour of subject.</rdfs:comment>
+        <rdfs:label>has colour</rdfs:label>
+        <skos:scopeNote>Colour used in the making of an artwork or a Calli-Writing unit (for the latter, distinct from &apos;background colour&apos;).</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P463 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P463">
+        <rdfs:comment>Organisation, club or musical group to which the subject belongs.</rdfs:comment>
+        <rdfs:label>is member of</rdfs:label>
+        <skos:scopeNote>An artistic collective or organisation a person belongs to.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P50 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P50">
+        <rdfs:comment>Main creator of a written work.</rdfs:comment>
+        <rdfs:label>author</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P608 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P608">
+        <rdfs:comment>Exhibition(s) where the artwork is or was displayed.</rdfs:comment>
+        <rdfs:label>exhibition history</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P664 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P664">
+        <rdfs:comment>Person or organisation responsible for organising an event.</rdfs:comment>
+        <rdfs:label>organiser</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P812 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P812">
+        <rdfs:comment>Major someone studied at college/university.</rdfs:comment>
+        <rdfs:label>field of study</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P84 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P84">
+        <rdfs:comment>Person or architectural firm responsible for designing the building.</rdfs:comment>
+        <rdfs:label>architect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P856 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P856">
+        <rdfs:comment>URL of the official page of an item.</rdfs:comment>
+        <rdfs:label>official website</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P86 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P86">
+        <rdfs:comment>Person(s) who wrote the music.</rdfs:comment>
+        <rdfs:label>composer</rdfs:label>
+        <skos:scopeNote>Person who composed the music for the performing arts event.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P88 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P88">
+        <rdfs:comment>Person or organisation that commissioned the work.</rdfs:comment>
+        <rdfs:label>commissioner</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P9302 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P9302">
+        <rdfs:comment>Style of script of a document or typeface.</rdfs:comment>
+        <rdfs:label>script style</rdfs:label>
+        <skos:scopeNote>Indicates a specific form / style of the Chinese script used in a Calli-Writing unit.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P937 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P937">
+        <rdfs:comment>Location where persons are actively participating in employment, business or other work.</rdfs:comment>
+        <rdfs:label>place of activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P941 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P941">
+        <rdfs:comment>Work, human, place or event which inspired this creative work or fictional entity.</rdfs:comment>
+        <rdfs:label>inspired by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P973 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P973">
+        <rdfs:comment>Item is described at the following URL.</rdfs:comment>
+        <rdfs:label>described at URL</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#calligrapher -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#calligrapher">
+        <owl:inverseOf rdf:resource="https://w3id.org/write/ontology#isCalligrapherOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q184485"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q215627"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Indicates the calligrapher who took part in a performing arts event or who produced the calligraphy for a decorative and applied artwork.</rdfs:comment>
+        <rdfs:label>calligrapher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#createsArtwork -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#createsArtwork">
+        <owl:inverseOf rdf:resource="https://w3id.org/write/ontology#derivesFrom"/>
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q184485"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:propertyDisjointWith rdf:resource="https://w3id.org/write/ontology#usesArtwork"/>
+        <rdfs:comment>Indicates the artwork created during a performing arts event.</rdfs:comment>
+        <rdfs:label>creates artwork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#derivesFrom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#derivesFrom">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q184485"/>
+        <rdfs:comment>Indicates the performing arts event from which the visual or decorative artwork derives from.</rdfs:comment>
+        <rdfs:label>derives from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#exhibitedArtwork -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#exhibitedArtwork">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q464980"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q184485"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q7725310"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Artwork(s) displayed in the exhibition (including those represented within the artworks&apos; series).</rdfs:comment>
+        <rdfs:label>exhibited artwork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasArtisticCollectiveType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasArtisticCollectiveType">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q1400264"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Indicates the type of the artistic collective (e.g., graffiti crew, dance company, architectural firm, etc.).</rdfs:comment>
+        <rdfs:label>has artistic collective type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasBackgroundColour -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasBackgroundColour">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Background colour of the Calli-Writing Unit.</rdfs:comment>
+        <rdfs:label>has background colour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasCharacterForm -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasCharacterForm">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Form of the Chinese character present in a Calli-Writing unit, i.e. simplified or non simplified Chinese character.</rdfs:comment>
+        <rdfs:label>has character form</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasChineseConcept -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasChineseConcept">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q17514"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q184485"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>Philosophical, literary, cultural, social or other concept or notion represented within the artwork.</rdfs:comment>
+        <rdfs:label>has Chinese concept</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasChineseVisualElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasChineseVisualElement">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q17514"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q184485"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:propertyDisjointWith rdf:resource="https://w3id.org/write/ontology#hasOtherVisualElement"/>
+        <rdfs:comment>Visual element or motif derived from Chinese culture that appears in the artwork.</rdfs:comment>
+        <rdfs:label>has Chinese visual element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasDecorativeArtworkType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasDecorativeArtworkType">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Indicates the typology of a decorative and applied artwork.</rdfs:comment>
+        <rdfs:label>has decorative artwork type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasGraffitiGenre -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasGraffitiGenre">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q17514"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>Provides the classification of a graffiti artwork by genre.</rdfs:comment>
+        <rdfs:label>has graffiti genre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasGraffitiStyle -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasGraffitiStyle">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q17514"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#CalliWritingUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>Indicates the visual style applied in the creation of a graffiti artwork.</rdfs:comment>
+        <rdfs:label>has graffiti style</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasGraffitiType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasGraffitiType">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q17514"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>Indicates a specific type or category of graffiti, defined by its form or medium.</rdfs:comment>
+        <rdfs:label>has graffiti type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasMember">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q43229"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q215627"/>
+        <rdfs:comment>Indicates individuals who are members of an artistic collective or organisation.</rdfs:comment>
+        <rdfs:label>has member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasOrganisationType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasOrganisationType">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q43229"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Provides the classification of an organisation.</rdfs:comment>
+        <rdfs:label>has organisation type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasOtherVisualElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasOtherVisualElement">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q17514"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Non-Chinese visual element (motif) that appears in the artwork.</rdfs:comment>
+        <rdfs:label>has other visual element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasPerformingArtworkType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasPerformingArtworkType">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q184485"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>Indicates the specific type or genre of a performing artwork.</rdfs:comment>
+        <rdfs:label>has performing artwork type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasTraditionalArtworkType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasTraditionalArtworkType">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#TraditionalArtwork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Indicates the type of the traditional artwork.</rdfs:comment>
+        <rdfs:label>has traditional artwork type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasUnit">
+        <owl:inverseOf rdf:resource="https://w3id.org/write/ontology#isUnitOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#WriteCollections"/>
+        <rdfs:range rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:comment>Connects the artwork to the Calli-Writing unit.</rdfs:comment>
+        <rdfs:label>has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasVisualArtworkType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasVisualArtworkType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#TraditionalArtwork"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Indicates the type of the visual artwork (e.g., calligraphic work, installation, print, etc.).</rdfs:comment>
+        <rdfs:label>has visual artwork type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasWikidataResource -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#hasWikidataResource">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q215627"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q43229"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q464980"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q7725310"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q7725634"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#TraditionalArtwork"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#WriteCollections"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Wikidata resource which identifies the record.</rdfs:comment>
+        <rdfs:label>has Wikidata resource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#includesArtwork -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#includesArtwork">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q7725310"/>
+        <rdfs:range rdf:resource="https://w3id.org/write/ontology#WriteCollections"/>
+        <rdfs:comment>Indicates artwork from four WRITE collections included in the series.</rdfs:comment>
+        <rdfs:label>includes artwork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isCalligrapherOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isCalligrapherOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q215627"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q184485"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Indicates a performing arts event or a decorative and applied artwork for which the person created calligraphy.</rdfs:comment>
+        <rdfs:label>is calligrapher of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isComposerOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isComposerOf">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q215627"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q184485"/>
+        <rdfs:comment>Indicates a performing arts event for which the person composed the music.</rdfs:comment>
+        <rdfs:label>is composer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isCreatorOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isCreatorOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q215627"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q43229"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q17514"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q7725310"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#TraditionalArtwork"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Indicates the artwork or artwork series created by the person, artistic collective, or an organisation.</rdfs:comment>
+        <rdfs:label>is creator of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isCuratorOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isCuratorOf">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q215627"/>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q464980"/>
+        <rdfs:comment>Indicates the exhibition curated by the person.</rdfs:comment>
+        <rdfs:label>is curator of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isDesignerOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isDesignerOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q215627"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q43229"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+        <rdfs:comment>Indicates the decorative and applied artwork designed by the person, artistic collective, or an organisation.</rdfs:comment>
+        <rdfs:label>is designer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isPerformerOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isPerformerOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q215627"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.wikidata.org/entity/Q184485"/>
+        <rdfs:comment>Indicates the performing arts event in which the person or artistic collective took part as a performer.</rdfs:comment>
+        <rdfs:label>is performer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isTagOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isTagOf">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1400264"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q215627"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Indicates the artist and / or the artistic collective whose tag is represented in the Calli-Writing unit.</rdfs:comment>
+        <rdfs:label>is tag of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#isUnitOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#isUnitOf">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/write/ontology#WriteCollections"/>
+        <rdfs:comment>Links the Calli-Writing unit to the artwork it derives from.</rdfs:comment>
+        <rdfs:label>is unit of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#madeUsingTool -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#madeUsingTool">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#CalliWritingUnit"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#WriteCollections"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Tool used in the creation of the artwork / Calli-Writing unit (e.g. brush, pencil, spray can, hand, hair).</rdfs:comment>
+        <rdfs:label>made using tool</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#relatedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#relatedUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:comment>Indicates other &quot;Calli-Writing&quot; unit belonging to the same artwork.</rdfs:comment>
+        <rdfs:label>related unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#usesArtwork -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/write/ontology#usesArtwork">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q184485"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#TraditionalArtwork"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>An already-existing artwork incorporated into a performing arts event or used in the creation of another artwork (n.b.: for new artworks produced during a performing arts event, use &apos;creates artwork&apos;).</rdfs:comment>
+        <rdfs:label>uses artwork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P1476 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P1476">
+        <rdfs:comment>Published name of a work, such as a newspaper article, a literary work, piece of music, a website, or a performance work.</rdfs:comment>
+        <rdfs:label>title</rdfs:label>
+        <skos:scopeNote>Title of the artwork, literary work, exhibition, or series of creative works (n.b.: multiple values are possible, each accompanied by a language tag).</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P2047 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P2047">
+        <rdfs:comment>Length of time of an event or process.</rdfs:comment>
+        <rdfs:label>duration</rdfs:label>
+        <skos:scopeNote>Duration of the performing arts event.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P2048 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P2048">
+        <rdfs:comment>Vertical length of an entity.</rdfs:comment>
+        <rdfs:label>height</rdfs:label>
+        <skos:scopeNote>Height of the artwork.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P2049 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P2049">
+        <rdfs:comment>Width of an object.</rdfs:comment>
+        <rdfs:label>width</rdfs:label>
+        <skos:scopeNote>Width of the artwork.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P2284 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P2284">
+        <rdfs:comment>Published price listed or paid for a product (use with unit of currency).</rdfs:comment>
+        <rdfs:label>price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P2561 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P2561">
+        <rdfs:comment>Name the subject is known by.</rdfs:comment>
+        <rdfs:label>name</rdfs:label>
+        <skos:scopeNote>Name of the person, artistic collective, or organisation (can be accompanied with the language tags).</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P569 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P569">
+        <rdfs:comment>Date on which the subject was born.</rdfs:comment>
+        <rdfs:label>date of birth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P570 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P570">
+        <rdfs:comment>Date on which the subject died.</rdfs:comment>
+        <rdfs:label>date of death</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P571 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P571">
+        <rdfs:comment>Time when an entity begins to exist.</rdfs:comment>
+        <rdfs:label>date of creation</rdfs:label>
+        <skos:scopeNote>Date when the artwork, the literary work, the artistic collective or the organisation was created (n.b.: for performing arts, use &apos;date&apos;).</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P580 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P580">
+        <rdfs:comment>Time an entity begins to exist or a statement starts being valid.</rdfs:comment>
+        <rdfs:label>start time</rdfs:label>
+        <skos:scopeNote>Date when the event started.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P582 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P582">
+        <rdfs:comment>Moment when an entity ceases to exist and a statement stops being entirely valid or no longer be true.</rdfs:comment>
+        <rdfs:label>end time</rdfs:label>
+        <skos:scopeNote>Date when the event finished.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P585 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P585">
+        <rdfs:comment>Date something took place, existed or a statement was true.</rdfs:comment>
+        <rdfs:label>date</rdfs:label>
+        <skos:scopeNote>Date in which a performing arts event occurred.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P6375 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P6375">
+        <rdfs:comment>Full street address where subject is located.</rdfs:comment>
+        <rdfs:label>street address</rdfs:label>
+        <skos:scopeNote>Street address where the graffiti artwork was created.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P742 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.wikidata.org/prop/direct/P742">
+        <rdfs:comment>Alias used by someone.</rdfs:comment>
+        <rdfs:label>pseudonym</rdfs:label>
+        <skos:scopeNote>Pseudonym of a person (n.b.: multiple values are possible, each accompanied by language tags where applicable).</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#attributedTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#attributedTitle">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Title attributed to the Calli-Writing unit.</rdfs:comment>
+        <rdfs:label>attributed title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#bibliographicReference -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#bibliographicReference">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A bibliographic citation identifying a source that describes the resource.</rdfs:comment>
+        <rdfs:label>bibliographic reference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#description -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#description">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment>Textual description of the resource.</rdfs:comment>
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#directionality -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#directionality">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Direction of the writing within a Calli-Writing unit (allowed values: &apos;traditional&apos;, &apos;modern&apos;, &apos;free&apos;, &apos;unidentifiable&apos;).</rdfs:comment>
+        <rdfs:label>directionality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasBigCharactersCalligraphy -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasBigCharactersCalligraphy">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates the presence or absence of big calligraphic characters in the &quot;Calli-Writing&quot; unit.</rdfs:comment>
+        <rdfs:label>has big characters calligraphy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasCalligraphicLine -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasCalligraphicLine">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates the presence or absence of a calligraphic line within a Calli-Writing unit.</rdfs:comment>
+        <rdfs:label>has calligraphic line</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasCalligraphicTraining -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasCalligraphicTraining">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q215627"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the type of calligraphic education the person has (allowed values: &apos;familial&apos;, &apos;self-Taught&apos;, &apos;master-taught&apos;, &apos;academic&apos;, &apos;school&apos;, &apos;not present&apos;, &apos;present (not specified)&apos;).</rdfs:comment>
+        <rdfs:label>has calligraphic training</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasChengyu -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasChengyu">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q17514"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates the presence or absence of the traditional Chinese four-character idiomatic expression.</rdfs:comment>
+        <rdfs:label>has chengyu</rdfs:label>
+        <skos:altLabel>has four-character idiom</skos:altLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasColophon -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasColophon">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q17514"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#CalliWritingUnit"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates the presence or absence of a colophon, which typically includes the time or date when the artwork was completed, the name of the artist, and the location.</rdfs:comment>
+        <rdfs:label>has colophon</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasSeal -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasSeal">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q17514"/>
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#TraditionalArtwork"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates the presence or absence of a seal, typically square-shaped and red-coloured, which serves as the signature of the artist.</rdfs:comment>
+        <rdfs:label>has seal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasSignificance -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasSignificance">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates whether the content of a Calli-Writing unit is meaningful, meaningless, or illegible (allowed values: &apos;Meaningful writing&apos;, &apos;Set of lines (meaningless)&apos;, &apos;Set of signs (illegible)&apos;).</rdfs:comment>
+        <rdfs:label>has significance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#hasTag -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#hasTag">
+        <rdfs:domain rdf:resource="http://www.wikidata.org/entity/Q215627"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment>Signature of the graffiti writer (n.b.: multiple values are possible, each accompanied by a language tag).</rdfs:comment>
+        <rdfs:label>has tag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#notes -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#notes">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Notes of any kind related to the item (private use only).</rdfs:comment>
+        <rdfs:label>notes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#numberOfCharacters -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#numberOfCharacters">
+        <rdfs:domain rdf:resource="https://w3id.org/write/ontology#CalliWritingUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Number of Chinese characters in a Calli-Writing unit.</rdfs:comment>
+        <rdfs:label>number of characters</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#transcriptionAndTranslation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#transcriptionAndTranslation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q7725634"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#CalliWritingUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment>Transcription and translation of the content of a Calli-Writing unit or (a section of) a literary work (n.b.: multiple values are possible, each accompanied by a language tag).</rdfs:comment>
+        <rdfs:label>transcription and translation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/write/ontology#vectorisedOrDigitised -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/write/ontology#vectorisedOrDigitised">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wikidata.org/entity/Q4502142"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#CalliWritingUnit"/>
+                    <rdf:Description rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates whether the artwork or Calli-Writing unit has been vectorised or digitised.</rdfs:comment>
+        <rdfs:label>vectorised or digitised</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1400264 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q1400264">
+        <rdfs:comment>Group of artists who create works together.</rdfs:comment>
+        <rdfs:label>Artistic Collective</rdfs:label>
+        <skos:scopeNote>Group of artists from diverse disciplines (e.g., calligraphers, graffiti writers, dancers, etc.) collaborating to create collective artistic works of any kind.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q17514 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q17514">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/write/ontology#WriteCollections"/>
+        <rdfs:comment>Genre of writing or drawing etched, scratched, scribbled, or sprayed (often, but not always illicitly) on a wall or other surface in a public place.</rdfs:comment>
+        <rdfs:label>Graffiti</rdfs:label>
+        <skos:scopeNote>Includes artworks from the WRITE collection specifically categorised under Graffiti Art.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q184485 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q184485">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/write/ontology#WriteCollections"/>
+        <rdfs:comment>Art form that is performed for an audience.</rdfs:comment>
+        <rdfs:label>Performing Arts</rdfs:label>
+        <skos:scopeNote>A class that includes artworks from the WRITE collection specifically categorised under Performing Arts, including performance events.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q215627 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q215627">
+        <rdfs:comment>Being that has certain capacities or attributes constituting personhood.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+        <skos:scopeNote>Individuals who engage in creative, artistic, or organisational roles (such as calligraphers, musicians, dancers, singers, graffiti writers, authors, creators, organisers, curators, and others).</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q43229 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q43229">
+        <rdfs:comment>Social entity established to meet needs or pursue goals.</rdfs:comment>
+        <rdfs:label>Organisation</rdfs:label>
+        <skos:scopeNote>Organisation involved in the production / commissioning of an artwork or the organisation of an exhibition.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4502142 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q4502142">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/write/ontology#WriteCollections"/>
+        <rdfs:comment>Work of art that is primarily visual.</rdfs:comment>
+        <rdfs:label>Visual Arts</rdfs:label>
+        <skos:scopeNote>Includes artworks from the WRITE collection specifically categorised under Visual Arts.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q464980 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q464980">
+        <rdfs:comment>Organized presentation and display of a selection of items or pictures.</rdfs:comment>
+        <rdfs:label>Exhibition</rdfs:label>
+        <skos:scopeNote>Exhibition showcasing one or more artworks (or artworks&apos; series) from the four WRITE collections.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7725310 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q7725310">
+        <rdfs:comment>Ordered set of creative works.</rdfs:comment>
+        <rdfs:label>Series of Creative Works</rdfs:label>
+        <skos:scopeNote>A set of related artworks that might be included in the four WRITE collections.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7725634 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q7725634">
+        <rdfs:comment>Written work read for enjoyment or edification.</rdfs:comment>
+        <rdfs:label>Literary Work</rdfs:label>
+        <skos:scopeNote>Literary work (in whole or in part) that serves as the basis or inspiration for a Calli-Writing unit, or the creation of an artwork.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/write/ontology#CalliWritingUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/write/ontology#CalliWritingUnit">
+        <rdfs:comment>In an artwork, a content unit featuring elements of calligraphy and / or writing, in a form of meaningful writing, set of signs and / or set of lines.</rdfs:comment>
+        <rdfs:label>Calli-Writing Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/write/ontology#DecorativeAndAppliedArts -->
+
+    <owl:Class rdf:about="https://w3id.org/write/ontology#DecorativeAndAppliedArts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/write/ontology#WriteCollections"/>
+        <rdfs:comment>Includes artworks from the WRITE collection specifically categorised under Decorative and Applied Arts.</rdfs:comment>
+        <rdfs:label>Decorative and Applied Arts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/write/ontology#TraditionalArtwork -->
+
+    <owl:Class rdf:about="https://w3id.org/write/ontology#TraditionalArtwork">
+        <rdfs:comment>Artwork that follows traditional calligraphic canons and / or is created before 1980. This artwork does not belong to any of the four WRITE collections, but it is somehow related to one or more artworks from these collections.</rdfs:comment>
+        <rdfs:label>Traditional Artwork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/write/ontology#WriteCollections -->
+
+    <owl:Class rdf:about="https://w3id.org/write/ontology#WriteCollections">
+        <rdfs:comment>Superclass that encompasses artworks from four distinct types of art (Visual Arts, Performing Arts, Graffiti Art, and Decorative and Applied Arts). There are four WRITE collections, one for each art category.</rdfs:comment>
+        <rdfs:label>WRITE collections</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
