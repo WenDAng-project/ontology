@@ -8,6 +8,18 @@ This document ensures that all modifications are traceable and citable across re
 
 ---
 
+## [v2.0.0] – 2026-10-28
+**Major update**
+
+- **Naming conventions**: Standardised property names using camelCase and improved naming consistency across classes and properties.
+- **New object properties**: Introduced new relationships, including inverse properties, to improve the representation of connections between entities.
+- **Improved semantic modelling**: Refined domain and range definitions and introduced additional OWL constructs, including symmetric and disjoint properties.
+- **Wikidata integration**: Updated Wikidata property references to improve consistency and interoperability.
+- **Documentation**: Expanded property descriptions and added SKOS scope notes to clarify the intended use of ontology terms.
+- **Namespace update**: Standardised ontology URIs and updated the version IRI.
+
+---
+
 ## [v1.0.0] – 2025-02-05
 **Major update (current version)**
 
