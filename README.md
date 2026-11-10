@@ -24,6 +24,16 @@ The WRITE ontology can be accessed through:
 
 ---
 
+### Competency Questions and SPARQL Queries
+
+The development of the WRITE ontology was guided by 27 competency questions organised into three groups: artistic analysis, linguistic/textual analysis, and socio-political-economic analysis.
+
+The corresponding SPARQL queries demonstrate how information can be retrieved from the WRITE knowledge graph.
+
+📋 **[View Competency Questions and SPARQL Queries](competency-questions/README.md)**
+
+---
+
 ### Contact
 Katarina Lučić - PhD candidate  
 Department of Interpreting and Translation, University of Bologna (Italy)    
