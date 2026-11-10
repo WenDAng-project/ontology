@@ -27,7 +27,7 @@ The development of the WRITE ontology was guided by 27 competency questions orga
 
 The corresponding SPARQL queries demonstrate how information can be retrieved from the WRITE knowledge graph.
 
-**[View Competency Questions and SPARQL Queries](Competency Questions/README.md)**
+**[View Competency Questions and SPARQL Queries](Competency%20Questions/README.md)**
 
 ---
 
