@@ -4,9 +4,6 @@ This page documents the 27 competency questions (CQs) developed for WenDAng and 
 
 #### How to use the queries
 
-
-#### How to use the queries
-
 The following SPARQL queries are provided as templates for exploring the WRITE knowledge graph.
 
 To execute them:
