@@ -171,7 +171,7 @@ WHERE {
 ```
 ## Group 2 — Linguistic/Textual Analysis
 
-### CQ 2.1 — In which language or languages is the content unit written?
+### CQ 2.1 — In which language or languages is the "Calli-Writing" unit written?
 
 ```sparql
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
@@ -184,7 +184,7 @@ WHERE {
 }
 ```
 
-### CQ 2.2 — Which writing system is used in the content unit?
+### CQ 2.2 — Which writing system is used in the "Calli-Writing" unit?
 
 ```sparql
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
@@ -210,7 +210,7 @@ WHERE {
 }
 ```
 
-### CQ 2.4 — Does the content unit contain a calligraphic line?
+### CQ 2.4 — Does the "Calli-Writing" unit contain a calligraphic line?
 
 ```sparql
 PREFIX write: <https://w3id.org/write/ontology#>
@@ -221,7 +221,7 @@ WHERE {
 }
 ```
 
-### CQ 2.5 — How many characters form the content unit?
+### CQ 2.5 — How many characters form the "Calli-Writing" unit?
 
 ```sparql
 PREFIX write: <https://w3id.org/write/ontology#>
@@ -238,7 +238,7 @@ WHERE {
 ```
 **Note:** The character count may include an RDF-star annotation using `write:accuracy` to indicate the accuracy of the recorded value.
 
-### CQ 2.6 — What is the writing direction of the content unit?
+### CQ 2.6 — What is the writing direction of the "Calli-Writing" unit?
 
 ```sparql
 PREFIX write: <https://w3id.org/write/ontology#>
@@ -249,7 +249,7 @@ WHERE {
 }
 ```
 
-### CQ 2.7 — Does the content unit carry semantic meaning, and how is that meaning classified?
+### CQ 2.7 — Does the "Calli-Writing" unit carry semantic meaning, and how is that meaning classified?
 
 ```sparql
 PREFIX write: <https://w3id.org/write/ontology#>
@@ -260,7 +260,7 @@ WHERE {
 }
 ```
 
-### CQ 2.8 — Is the content unit based on a literary text?
+### CQ 2.8 — Is the "Calli-Writing" unit based on a literary text?
 
 ```sparql
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
