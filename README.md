@@ -13,9 +13,6 @@ It is developed and maintained within the **WenDAng - WRITE Digital Archive proj
 
 The WRITE ontology can be accessed through:
 
-- 🌐 **/DH.arc Vocabularies:** [https://lab.dharc.unibo.it/skosmos/write/en/](https://lab.dharc.unibo.it/skosmos/write/en/)  
-  *A user-friendly web interface for browsing and searching classes and properties, implemented using Skosmos.*
-
 - 🔗 **pyLODE visualisation, on the w3id persistent URI:** [https://w3id.org/write/ontology](https://w3id.org/write/ontology)  
   *Permanent and resolvable URIs for all classes and properties.*
 
